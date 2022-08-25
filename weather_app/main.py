@@ -13,5 +13,7 @@ def main():
     print(f"the name of the city is {city}")   
     get_weather_data(city,api_key)
 
+#The below condition is added to avoid the execution of the code when it is imported as module
+
 if __name__ == '__main__':
     main()

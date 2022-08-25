@@ -2,8 +2,10 @@
 import main
 
 
-
 def test_check_api():
+    print(__name__)
     # city=main.input
-    data=main.get_weather_data("Pune")   
-    assert data=
+    data=main.get_weather_data("Ikebukuro")   
+    print(data['cod'])
+    #assert raises an error if the below condition is false
+    assert data['cod']==200
